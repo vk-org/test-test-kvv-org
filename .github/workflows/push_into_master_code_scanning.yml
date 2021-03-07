@@ -1,0 +1,25 @@
+name: Push into master branch code scanning
+
+on:
+  push:
+
+jobs:
+  code_scanning:
+    name: Scan
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        id: checkout
+        uses: actions/checkout@v2
+
+      - name: Scan current project
+        uses: anchore/scan-action@v2
+        with:
+          path: "."
+          acs-report-enable: true
+          fail-build: false
+          severity-cutoff: "high"
+          debug: false
+
+      - name: upload Anchore scan SARIF report
+        uses: github/codeql-action/upload-sarif@v1
