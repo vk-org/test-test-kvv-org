@@ -1,6 +1,6 @@
 async function commentPullRequest(github, context, output, action = "update" ) { // Default action is update existing comment
     // Variable shows initial state of comment deleting
-    let wasDeleted = false;
+    var wasDeleted = false;
     // Get the existing comments.
     const {data: comments} = await github.issues.listComments({
         owner: context.repo.owner,
