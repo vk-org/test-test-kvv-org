@@ -2,27 +2,13 @@
   "name": "developer-handbook",
   "version": "0.2.0",
   "dependencies": {
-    "http-server": "0.12.3",
-    "vuepress": "1.8.0",
-    "vuepress-plugin-zooming": "1.1.8",
-    "@vuepress/plugin-back-to-top": "1.8.0",
-    "vuepress-plugin-fulltext-search": "2.1.0",
-    "@vuepress/plugin-last-updated": "1.8.0",
+    "@vuepress/plugin-back-to-top": "1.8.2",
+    "@vuepress/plugin-last-updated": "1.8.2",
+    "vuepress": "1.8.2",
     "vuepress-plugin-code-copy": "1.0.6",
-    "ecstatic": "4.1.4",
-    "vuepress-plugin-smooth-scroll": "0.0.10",
-    "dayjs": "1.10.4",
-    "atob": "2.1.2",
-    "merge": "2.1.1",
-    "websocket-extensions": "0.1.4",
-    "base": "0.11.2",
-    "rc": "1.2.8",
-    "dot-prop": "6.0.1",
-    "delegate": "3.2.0",
-    "cookie": "0.4.0",
-    "clipboard": "2.0.7",
-    "bonjour": "3.5.0",
-    "fresh": "0.5.2"
+    "vuepress-plugin-fulltext-search": "2.1.0",
+    "vuepress-plugin-zooming": "1.1.8",
+    "dayjs": "1.10.4"
   },
   "scripts": {
     "dev": "vuepress dev",
@@ -31,5 +17,20 @@
   },
   "devDependencies": {
     "adr-log": "^2.1.3"
+  },
+  "resolutions": {
+    "ecstatic": ">=4.1.4",
+    "atob": "2.1.2",
+    "base": "0.11.2",
+    "bonjour": "3.5.0",
+    "clipboard": "2.0.7",
+    "cookie": "0.4.0",
+    "delegate": "3.2.0",
+    "dot-prop": "^5.2.0",
+    "fresh": "0.5.2",
+    "http-server": "0.12.3",
+    "merge": "^1.2.0",
+    "rc": "1.2.8",
+    "websocket-extensions": "0.1.4"
   }
 }
