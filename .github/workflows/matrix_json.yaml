@@ -11,7 +11,7 @@ jobs:
       - id: set-matrix
         #run: echo "::set-output name=matrix::{\"include\":[{\"repo\":\"test-test-kvv-org\",\"environment_name\":\"test\"},{\"repo\":\"test-sonar-repo\",\"environment_name\":\"test1\"}]}"
         run: echo "json=$(cat ${GITHUB_WORKSPACE}/structure.json)"
-      - run: echo "::set-output name=matrix::toJSON($env.json}"
+      - run: echo "::set-output name=matrix::toJSON(${{ env.json }})"
   job2:
     needs: job1
     runs-on: ubuntu-latest
