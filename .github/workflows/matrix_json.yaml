@@ -3,7 +3,7 @@ on: push
 env:
   json: |
     {
-      "labs": [ {
+      "labs":[{
         "name":"Arterial Blood Gas",
         "time":"Today",
         "location":"Main Hospital Lab"
