@@ -1,5 +1,18 @@
 name: build
 on: push
+env:
+  json: |
+  '"labs": [ {
+    "name": "Arterial Blood Gas",
+    "time": "Today",
+    "location": "Main Hospital Lab"
+  },
+  {
+    "name":"BMP",
+    "time":"Today",
+    "location":"Primary Care Clinic"
+  }]'
+
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -7,7 +20,8 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
     - id: set-matrix
-      run: echo "::set-output name=matrix::{\"include\":[{\"repo\":\"test-test-kvv-org\",\"environment_name\":\"test\"},{\"repo\":\"test-sonar-repo\",\"environment_name\":\"test1\"}]}"
+      #run: echo "::set-output name=matrix::{\"include\":[{\"repo\":\"test-test-kvv-org\",\"environment_name\":\"test\"},{\"repo\":\"test-sonar-repo\",\"environment_name\":\"test1\"}]}"
+      run: echo "::set-output name=matrix::${{env.json}}"
   job2:
     needs: job1
     runs-on: ubuntu-latest
@@ -15,5 +29,5 @@ jobs:
       matrix: ${{fromJson(needs.job1.outputs.matrix)}}
     steps:
       - run: echo "${{ toJSON(matrix) }}"
-      - run: echo ${{ matrix.repo }}
-      - run: echo ${{ matrix.environment_name }}
+      - run: echo ${{ matrix.*.name }}
+      - run: echo ${{ matrix.*.time }}
