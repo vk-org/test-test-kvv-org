@@ -3,15 +3,15 @@ on: push
 env:
   json: |
     {
-      \"labs\": [ {
-        \"name\": \"Arterial Blood Gas\",
-        \"time\": \"Today\",
-        \"location\": \"Main Hospital Lab\"
+      "labs": [ {
+        "name": "Arterial Blood Gas",
+        "time": "Today",
+        "location": "Main Hospital Lab"
       },
       {
-        \"name\":\"BMP\",
-        \"time\":\"Today\",
-        \"location\":\"Primary Care Clinic\"
+        "name":"BMP",
+        "time":"Today",
+        "location":"Primary Care Clinic"
       }]
     }
 
@@ -31,5 +31,5 @@ jobs:
       matrix: ${{fromJson(needs.job1.outputs.matrix)}}
     steps:
       - run: echo "${{ toJSON(matrix) }}"
-      - run: echo ${{ matrix.*.name }}
-      - run: echo ${{ matrix.*.time }}
+#      - run: echo ${{ matrix.*.name }}
+#      - run: echo ${{ matrix.*.time }}
