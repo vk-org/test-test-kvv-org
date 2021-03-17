@@ -7,7 +7,8 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-    - id: set-matrix
+      - uses: actions/checkout@v2
+      - id: set-matrix
       #run: echo "::set-output name=matrix::{\"include\":[{\"repo\":\"test-test-kvv-org\",\"environment_name\":\"test\"},{\"repo\":\"test-sonar-repo\",\"environment_name\":\"test1\"}]}"
       run: echo "::set-output name=matrix::$(cat ${GITHUB_WORKSPACE}/structure.json)"
   job2:
