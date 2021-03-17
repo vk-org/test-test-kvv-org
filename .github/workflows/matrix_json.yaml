@@ -1,19 +1,7 @@
 name: build
 on: push
 env:
-  json: |
-    {
-      "labs":[{
-        "name":"Arterial Blood Gas",
-        "time":"Today",
-        "location":"Main Hospital Lab"
-      },
-      {
-        "name":"BMP",
-        "time":"Today",
-        "location":"Primary Care Clinic"
-      }]
-    }
+  json: '{"labs":[{"name":"Arterial Blood Gas","time":"Today","location":"Main Hospital Lab"},{"name":"BMP","time":"Today","location":"Primary Care Clinic"}]}'
 
 jobs:
   job1:
