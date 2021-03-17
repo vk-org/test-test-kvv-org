@@ -4,9 +4,9 @@ env:
   json: |
     {
       "labs": [ {
-        "name": "Arterial Blood Gas",
-        "time": "Today",
-        "location": "Main Hospital Lab"
+        "name":"Arterial Blood Gas",
+        "time":"Today",
+        "location":"Main Hospital Lab"
       },
       {
         "name":"BMP",
