@@ -9,7 +9,7 @@ jobs:
     name: Build PR Environment
     runs-on: ubuntu-latest
     environment:
-      name: PR ${{ env.PR_NUMBER }}
+      name: ${{ env.PR_NUMBER }}
       url: google.com
     steps:
       - run: echo "1"
