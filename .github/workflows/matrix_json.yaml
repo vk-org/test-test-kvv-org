@@ -12,6 +12,7 @@ jobs:
     environment:
       name: "${{ needs.job1.outputs.matrix }}"
       url: google.com
+      wait_timer: 2  
     steps:
       - run: echo "1"
   job1:
