@@ -8,8 +8,9 @@ jobs:
   env_test:
     name: Build PR Environment
     runs-on: ubuntu-latest
+    needs: [job1]
     environment:
-      name: ${{ steps.set-matrix.outputs.matrix }}
+      name: ${{ fromJson(needs.job1.outputs.matrix) }}
       url: google.com
     steps:
       - run: echo "1"
