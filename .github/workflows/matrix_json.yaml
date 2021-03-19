@@ -1,7 +1,18 @@
 name: build
 on: push
 
+env:
+  PR_NUMBER: 1
+
 jobs:
+  env_test:
+    name: Build PR Environment
+    runs-on: 2xlarge
+    environment:
+      name: PR ${{ env.PR_NUMBER }}
+      url: 
+    steps:
+      - run: echo "1"
   job1:
     runs-on: ubuntu-latest
     outputs:
