@@ -7,10 +7,10 @@ env:
 jobs:
   env_test:
     name: Build PR Environment
-    runs-on: 2xlarge
+    runs-on: ubuntu-latest
     environment:
       name: PR ${{ env.PR_NUMBER }}
-      url: 
+      url: google.com
     steps:
       - run: echo "1"
   job1:
