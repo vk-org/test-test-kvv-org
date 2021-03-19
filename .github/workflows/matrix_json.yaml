@@ -9,7 +9,7 @@ jobs:
     name: Build PR Environment
     runs-on: ubuntu-latest
     environment:
-      name: ${{ env.PR_NUMBER }}
+      name: ${{ step.set-matrix.outputs.matrix }}
       url: google.com
     steps:
       - run: echo "1"
