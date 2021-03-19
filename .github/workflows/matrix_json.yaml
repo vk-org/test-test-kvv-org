@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [job1]
     environment:
-      name: ${{ fromJson(needs.job1.outputs.matrix) }}
+      name: "${{ fromJson(needs.job1.outputs.matrix) }}"
       url: google.com
     steps:
       - run: echo "1"
