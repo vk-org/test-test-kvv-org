@@ -20,6 +20,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
+      - run: cat /etc/*release
       - uses: actions/checkout@v2
       - id: set-matrix
         run: echo "::set-output name=matrix::{\"include\":[{\"repo\":\"test-test-kvv-org\",\"environment_name\":\"test\"},{\"repo\":\"test-sonar-repo\",\"environment_name\":\"test1\"}]}"
