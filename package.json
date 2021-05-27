@@ -4,7 +4,7 @@
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.8.2",
     "@vuepress/plugin-last-updated": "1.8.2",
-    "dayjs": "1.10.4",
+    "dayjs": "1.10.5",
     "vuepress": "1.8.2",
     "vuepress-plugin-code-copy": "1.0.6",
     "vuepress-plugin-fulltext-search": "2.1.0",
