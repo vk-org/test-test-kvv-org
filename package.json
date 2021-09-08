@@ -1,5 +1,5 @@
 {
-  "name": "developer-handbook",
+  "name": "vuepress-test",
   "version": "0.2.0",
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.8.2",
