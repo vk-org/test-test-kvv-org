@@ -7,7 +7,7 @@
     "dayjs": "1.10.4",
     "vuepress": "1.8.2",
     "vuepress-plugin-code-copy": "1.0.6",
-    "vuepress-plugin-fulltext-search": "2.1.0",
+    "vuepress-plugin-fulltext-search": "2.2.1",
     "vuepress-plugin-zooming": "1.1.8"
   },
   "scripts": {
