@@ -9,7 +9,7 @@ jobs:
           repository: vk-org/composite-action
           token: ${{ secrets.SUPER_TOKEN }}
           path: composite
-      - run: la -la
+      - run: ls -la
       - uses: actions/checkout@v2
         with: 
           clean: false
