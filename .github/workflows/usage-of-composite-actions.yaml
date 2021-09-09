@@ -10,6 +10,8 @@ jobs:
           token: ${{ secrets.SUPER_TOKEN }}
           path: composite
       - uses: actions/checkout@v2
+        with: 
+          clean: false
       - run: ls -la
       #- uses: ./composite
       #  with:
