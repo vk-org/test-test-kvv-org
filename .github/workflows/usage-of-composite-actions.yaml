@@ -10,7 +10,7 @@ jobs:
           token: ${{ secrets.SUPER_TOKEN }}
           path: composite
       - uses: actions/checkout@v2
-      - run: la -la
+      - run: ls -la
       #- uses: ./composite
       #  with:
        #   registry_username: ${{secrets.REGISTRY_USERNAME}}
