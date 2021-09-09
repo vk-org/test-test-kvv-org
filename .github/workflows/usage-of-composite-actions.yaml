@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: my-org/my-private-tools
+          repository: vk-org/composite-action
           token: ${{ secrets.SUPER_TOKEN }}
           path: composite
       - uses: actions/checkout@v2
