@@ -10,7 +10,7 @@ jobs:
           repository: vk-org/composite-action
           token: ${{ secrets.SUPER_TOKEN }}
           path: composite
-      - run: ls -la 
+      
       - uses: ./composite
         with:
           registry_username: ${{secrets.REGISTRY_USERNAME}}
