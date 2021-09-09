@@ -11,8 +11,8 @@ jobs:
           path: composite
       - uses: actions/checkout@v2
       - run: la -la
-      - uses: /composite
-        with:
-          registry_username: ${{secrets.REGISTRY_USERNAME}}
-          registry_password: ${{secrets.REGISTRY_PASSWORD}}
-          image_name: test-repo
+      #- uses: ./composite
+      #  with:
+       #   registry_username: ${{secrets.REGISTRY_USERNAME}}
+       #   registry_password: ${{secrets.REGISTRY_PASSWORD}}
+        #  image_name: test-repo
