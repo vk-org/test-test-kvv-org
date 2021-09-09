@@ -15,7 +15,7 @@ jobs:
           path: current 
       - run: |
           ls -la
-          cd current 
+          
       - uses: ./composite
         with:
           registry_username: ${{secrets.REGISTRY_USERNAME}}
