@@ -5,7 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: vk-org//composite-action@0.0.2
+        with:
+          repository: my-org/my-private-tools
+          token: ${{ secrets.SUPER_TOKEN }}
+          path: composite
+      - uses: actions/checkout@v2
+      - uses: ./composite
         with:
           registry_username: ${{secrets.REGISTRY_USERNAME}}
           registry_password: ${{secrets.REGISTRY_PASSWORD}}
