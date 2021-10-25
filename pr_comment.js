@@ -1,5 +1,6 @@
 async function commentPullRequest(github, context, output, action = "update" ) { 
     // Default action is update existing comment
+
     // Variable shows initial state of comment deleting
     var wasDeleted = false;
     var reg = /<!--(.|\s)*?-->/g;
