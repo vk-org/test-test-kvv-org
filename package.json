@@ -5,7 +5,7 @@
   "dependencies": {
     "@vuepress/plugin-back-to-top": "1.8.2",
     "@vuepress/plugin-last-updated": "1.8.2",
-    "vuepress": "1.8.2",
+    "vuepress": "1.9.3",
     "vuepress-plugin-code-copy": "1.0.6",
     "vuepress-plugin-fulltext-search": "2.2.1",
     "vuepress-plugin-zooming": "1.1.8",
