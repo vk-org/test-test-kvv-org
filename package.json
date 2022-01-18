@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "license": "UNLICENSED",
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "1.8.2",
+    "@vuepress/plugin-back-to-top": "1.9.6",
     "@vuepress/plugin-last-updated": "1.8.2",
     "vuepress": "1.8.2",
     "vuepress-plugin-code-copy": "1.0.6",
