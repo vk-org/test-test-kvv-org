@@ -9,7 +9,7 @@
     "vuepress-plugin-code-copy": "1.0.6",
     "vuepress-plugin-fulltext-search": "2.2.1",
     "vuepress-plugin-zooming": "1.1.8",
-    "dayjs": "1.10.7",
+    "dayjs": "1.10.8",
     "ecstatic": "^4.1.4"
   },
   "scripts": {
