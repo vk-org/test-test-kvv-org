@@ -5,14 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
-        with:
-          repository: vk-org/composite-action
-          token: ${{ secrets.SUPER_TOKEN }}
-          path: composite
-      
-      - uses: ./composite
-        with:
-          registry_username: ${{secrets.REGISTRY_USERNAME}}
-          registry_password: ${{secrets.REGISTRY_PASSWORD}}
-          image_name: test-repo
+
